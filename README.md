@@ -1,24 +1,23 @@
-# Dynamic Background Changer
-
-## Description
-Dynamic Background Changer is a web-based application that changes the background image of a iamge dynamically. 
-This project is built using HTML, CSS, and JavaScript.
-
-## Features
-- Dynamically changes the background of an image.
-- Uses HTML for the structure of the webpage.
-- Uses CSS for styling and creating visually appealing designs.
-- Uses JavaScript for adding functionality to change the background image.
-
-## Installation and Setup
-1. Clone this repository to your local machine.
-2. Open the `index.html` file in your preferred web browser.
-
-## Usage
-Simply load the webpage in your browser. The background image will change dynamically.
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-MIT
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background image changer</title>
+    <link rel="stylesheet" href="backgroundchanger.css">
+</head>
+<body>
+    <div class="container">
+       <div class="img-box">
+        <img src="transparent.png" width="100%">
+        <div class="img-wrap">
+            <img src="original.jpg" id="originalImg">
+        </div>
+        <span id="line">
+            <img src="arrow.png" class="arrow">
+        </span>
+       </div> 
+    </div>
+</body>
+<script src="backgroundchanger.js"></script>
+</html>
